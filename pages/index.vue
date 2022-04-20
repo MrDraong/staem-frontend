@@ -1,9 +1,11 @@
 <template>
-  <Tutorial />
+    <main fluid>
+        <Carousel />
+    </main>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+    name: 'IndexPage',
 }
 </script>

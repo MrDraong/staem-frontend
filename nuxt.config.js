@@ -1,4 +1,9 @@
 export default {
+    privateRuntimeConfig: {
+        supaToken: process.env.ANON_KEY,
+        supaAuthorization: process.env.AUTHORIZATION_KEY,
+    },
+
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: 'staem-front',
@@ -21,7 +26,7 @@ export default {
     css: [],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: [{ src: '~/plugins/supadb.js' }],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,

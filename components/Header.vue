@@ -6,6 +6,7 @@
         <v-col md="6" align="end">
             <button
                 class="rounded-full bg-custom-blue w-32 text-white font-medium"
+                @click="getData()"
             >
                 <v-icon color="#fff" left>mdi-download</v-icon> Install
             </button>
@@ -16,5 +17,11 @@
 <script>
 export default {
     name: 'HeaderNav',
+    methods: {
+        async getData() {
+            const { data } = await this.$supabase.from('steam').select('*')
+            console.log('yo', data)
+        },
+    },
 }
 </script>

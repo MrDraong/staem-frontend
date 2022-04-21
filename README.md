@@ -1,6 +1,10 @@
 # staem-front
 
-## Build Setup
+## About this project
+
+Challenge front end by zernonia : https://blog.zernonia.com/i-design-you-build-frontend-challenge-4-supabase-version
+
+### Build Setup autogenerate part of the readme
 
 ```bash
 # install dependencies

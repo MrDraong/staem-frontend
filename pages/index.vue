@@ -1,7 +1,9 @@
 <template>
-    <main fluid>
+    <v-container fluid class="staemMediumBlue">
+        <Header />
         <Carousel />
-    </main>
+        <GameList />
+    </v-container>
 </template>
 
 <script>

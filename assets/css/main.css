@@ -1,0 +1,15 @@
+.staemLightBlue {
+    color: #214b6b !important;
+}
+
+.staemMediumBlue {
+    background-color: #1b2837 !important;
+}
+
+.noBorders {
+    border-width: 0px !important;
+}
+
+.noBackground {
+    background-color: transparent !important;
+}

@@ -1,9 +1,9 @@
 <template>
-    <v-row no-gutters>
-        <v-col md="6">
+    <v-row justify="space-between">
+        <v-col class="col-6">
             <h1 class="w-24 font-bold text-lg">STAEM</h1>
         </v-col>
-        <v-col md="6" align="end">
+        <v-col class="col-6">
             <button
                 class="rounded-full bg-custom-blue w-32 text-white font-medium"
                 @click="getData()"

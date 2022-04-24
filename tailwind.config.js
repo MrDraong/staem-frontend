@@ -7,6 +7,7 @@ module.exports = {
                 transparent: 'transparent',
                 current: 'currentColor',
                 'custom-blue': '#214B6B',
+                'custom-blue-dark': '#17202D',
                 white: '#ffffff',
                 purple: '#3f3cbb',
                 midnight: '#121063',

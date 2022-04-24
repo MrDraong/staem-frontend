@@ -1,18 +1,11 @@
 import { createClient } from '@supabase/supabase-js'
-// import config from '~/nuxt.config'
 
-const supabase = createClient(
+export default createClient(
     'https://gqkuommdmfzmwkzdewma.supabase.co',
-    process.env.ANON_KEY /* config.privateRuntimeConfig.supaToken */,
+    process.env.SUPA_KEY,
     {
         headers: {
-            Authorization:
-                process.env
-                    .AUTHORIZATION_KEY /* config.privateRuntimeConfig.supaAuthorization */,
+            Authorization: process.env.SUPA_AUTHORIZATION,
         },
     }
 )
-
-export default (context, inject) => {
-    inject('supabase', supabase)
-}

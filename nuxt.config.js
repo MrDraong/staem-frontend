@@ -1,9 +1,5 @@
+require('dotenv').config()
 export default {
-    privateRuntimeConfig: {
-        supaToken: process.env.ANON_KEY,
-        supaAuthorization: process.env.AUTHORIZATION_KEY,
-    },
-
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: 'staem-front',
@@ -23,10 +19,10 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [],
+    css: ['@/assets/css/main.css'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [{ src: '~/plugins/supadb.js' }],
+    plugins: [{ src: '~/plugins/vue-infinite-scroll.js', ssr: false }],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -47,6 +43,7 @@ export default {
         '@nuxt/content',
         // https://vuetifyjs.com/
         '@nuxtjs/vuetify',
+        '@nuxtjs/dotenv',
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios

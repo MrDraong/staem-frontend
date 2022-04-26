@@ -1,5 +1,16 @@
 <template>
     <div class="staemMediumBlue p-12">
+        <v-row class="pb-20">
+            <v-col class="text-white" cols="12" sm="12" md="2">
+                <v-text-field
+                    label="search"
+                    rounded
+                    dense
+                    color="#fff"
+                    class="bg-custom-blue text-white"
+                ></v-text-field>
+            </v-col>
+        </v-row>
         <GameCard v-for="(item, index) of items" :key="index" :item="item" />
 
         <infinite-loading

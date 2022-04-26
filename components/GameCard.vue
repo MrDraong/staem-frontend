@@ -1,6 +1,6 @@
 <template>
-    <v-card class="mb-10 noBorders noBackground">
-        <v-row :align="align" no-gutters>
+    <v-card class="mb-10 no-borders no-background">
+        <v-row no-gutters>
             <v-col class="col-5">
                 <v-img
                     class="rounded-l-3xl"

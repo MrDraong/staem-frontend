@@ -6,10 +6,13 @@
     background-color: #1b2837 !important;
 }
 
-.noBorders {
+.no-borders {
     border-width: 0px !important;
 }
 
-.noBackground {
+.no-background {
     background-color: transparent !important;
+}
+.text-white {
+    color: #fff !important;
 }

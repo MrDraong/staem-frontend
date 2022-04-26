@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="staemMediumBlue">
         <Header />
-        <Carousel />
+        <!--Carousel /-->
         <GameList />
     </v-container>
 </template>

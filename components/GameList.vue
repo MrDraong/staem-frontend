@@ -1,14 +1,18 @@
 <template>
     <div class="staemMediumBlue p-12">
-        <v-row class="pb-20">
-            <v-col class="text-white" cols="12" sm="12" md="2">
+        <v-row class="pb-20 w-full">
+            <v-col class="text-white text-center" cols="6" sm="6" md="2">
                 <v-text-field
-                    label="search"
-                    rounded
-                    dense
+                    label="Search"
+                    height="10px"
                     color="#fff"
                     class="bg-custom-blue text-white"
+                    dark
+                    rounded
                 ></v-text-field>
+            </v-col>
+            <v-col cols="6" sm="6" md="2">
+                <v-select :items="items" label="Standard"></v-select>
             </v-col>
         </v-row>
         <GameCard v-for="(item, index) of items" :key="index" :item="item" />

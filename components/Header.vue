@@ -1,7 +1,7 @@
 <template>
     <v-row justify="space-between">
         <v-col class="col-6">
-            <h1 class="w-24 font-bold text-lg">STAEM</h1>
+            <h1 class="w-24 font-bold text-lg text-white ml-8">STAEM</h1>
         </v-col>
         <v-col class="col-6">
             <button

@@ -11,8 +11,19 @@
                     rounded
                 ></v-text-field>
             </v-col>
-            <v-col cols="6" sm="6" md="2">
-                <v-select :items="items" label="Standard"></v-select>
+            <v-col cols="6" sm="3" md="2" class="text-white">
+                <v-row
+                    ><p>Sorted By</p>
+                    <v-select
+                        class="bg-custom-blue text-white"
+                        v-model="select"
+                        height="10px"
+                        :items="itemsFilter"
+                        item-text="text"
+                        item-value="value"
+                        rounded
+                    ></v-select
+                ></v-row>
             </v-col>
         </v-row>
         <GameCard v-for="(item, index) of items" :key="index" :item="item" />
@@ -33,6 +44,12 @@ export default {
         return {
             items: [],
             page: 1,
+            select: { text: 'Price', value: 'price' },
+            itemsFilter: [
+                { text: 'Price', value: 'price' },
+                { text: 'Name', value: 'name' },
+                { text: 'Platforms', value: 'platforms' },
+            ],
         }
     },
     computed: {
